@@ -1,8 +1,8 @@
-package org.example;
+package LessonThree;
 
 import java.util.Arrays;
 
-public class Main {
+public class LessonThree {
 
     static void printThreeWords() {
         System.out.println("Orange");
@@ -66,9 +66,7 @@ public class Main {
     }
 
     public static boolean isLeapYear(int year) {
-        if (year % 400 == 0) return true;
-        if (year % 100 == 0) return false;
-        return year % 4 == 0;
+        return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
     }
 
     public static int[] invertArray(int[] array) {
